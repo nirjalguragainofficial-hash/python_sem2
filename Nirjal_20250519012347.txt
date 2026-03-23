@@ -1,0 +1,11 @@
+Customer Name: Nirjal
+Date & Time: 2025-05-19 01:23:47
+
+Item: Sunscreen (Aqualogica)
+Bought: 2
+Free Units: 0
+Total Units Received: 2
+Amount (Without VAT): Rs. 3120.0
+VAT (13%): Rs. 405.6
+
+Final Amount to Pay: Rs. 3525.6
