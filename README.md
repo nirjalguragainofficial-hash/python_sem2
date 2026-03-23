@@ -1,0 +1,89 @@
+# WeCare Beauty & Skincare Shop Management System
+
+A simple command-line application for managing inventory, sales, and restocking operations for a beauty and skincare shop.
+
+## Features
+
+- **Display Products**: View all available products with current stock levels, cost prices, and selling prices
+- **Sell Products**: Process sales with automatic markup (200% of cost price) and special offers (buy 3 get 1 free)
+- **Add Stock**: Restock products and update inventory
+- **Bill Generation**: Automatic generation of sales and restock bills
+- **Data Persistence**: Products stored in text file format
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/wecare-shop-management.git
+   cd wecare-shop-management
+   ```
+
+2. Ensure you have Python 3.x installed on your system.
+
+3. No additional dependencies required - this project uses only Python standard library.
+
+## Usage
+
+Run the main application:
+
+```bash
+python main.py
+```
+
+### Menu Options:
+1. **Display Products** - Shows all products with current stock and pricing
+2. **Sell Product** - Process a sale transaction
+3. **Add Stock** - Restock existing products
+4. **Quit** - Exit the application
+
+### Product Data Format
+Products are stored in `products.txt` with the format:
+```
+Product Name, Brand, Quantity, Cost Price, Origin
+```
+
+Example:
+```
+Vitamin C Serum, Garnier, 200, 1000, France
+```
+
+## Project Structure
+
+- `main.py` - Main application entry point with menu system
+- `operation.py` - Core business logic for inventory management
+- `read.py` - File reading utilities
+- `write.py` - Bill generation and file writing utilities
+- `products.txt` - Product inventory data file
+
+## Features in Detail
+
+### Sales Processing
+- Automatic markup calculation (selling price = 2 × cost price)
+- Buy 3 Get 1 Free promotion
+- Stock validation before sale
+- Automatic bill generation
+
+### Restocking
+- Add quantity to existing products
+- Cost price updates
+- Restock bill generation
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+[Nirjal Guragain](https://github.com/yourusername)
+
+---
+
+*Built with Python for educational purposes*
