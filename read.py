@@ -1,5 +1,5 @@
 def readingfile(path_to_file):
-    """Reads a text file and returns product details in expected format."""
+    """Reads a text file and return as the product details in expected format."""
     item_list = []
 
     try:
@@ -7,6 +7,7 @@ def readingfile(path_to_file):
             for line in f:
                 parts = line.strip().split(", ")
                 if len(parts) == 5:
+                    
                     item = {
                         "name": parts[0],
                         "brand": parts[1],
