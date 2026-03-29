@@ -24,7 +24,6 @@ def save_items():
 
 def show_items():
     products = readingfile("products.txt")
-    
     if products:
         # Apply markup to display correct selling prices
         products = apply_markup(products)
