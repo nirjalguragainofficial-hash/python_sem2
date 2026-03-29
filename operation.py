@@ -2,7 +2,7 @@ from read import readingfile
 from write import make_sales_bill, make_restock_bill
 
 def apply_markup(items):
-    """Set selling price to 200% higher than cost price (2x cost price)."""
+    """Set selling price to 200% higher than the cost price (2x cost price)."""
     for item in items:
         item["selling_price"] = item["cost_price"] * 2
     return items
@@ -14,7 +14,7 @@ def load_items():
 items_in_stock = load_items()
 
 def save_items():
-    """Save updated stock back to the text file."""
+    """Save updated stock back to an text file."""
     try:
         with open("products.txt", "w") as f:
             for item in items_in_stock:
@@ -25,6 +25,7 @@ def save_items():
 
 def show_items():
     products = readingfile("products.txt")
+    
     if products:
         # Apply markup to display correct selling prices
         products = apply_markup(products)
@@ -46,7 +47,7 @@ def process_sale(items, item_name, qty_needed):
             if total_units > item["quantity"]:
                 print(f"Not enough stock to provide {qty_needed} + {free_units} free units.")
                 return None
-
+                
             subtotal = qty_needed * item["selling_price"]
             vat = subtotal * 0.13
             total_due = subtotal + vat
@@ -71,6 +72,7 @@ def process_restock(items, item_name, added_qty, new_price=None):
     for item in items:
         if item["name"].lower() == item_name.lower():
             item["quantity"] += added_qty
+  
             if new_price is not None:
                 item["cost_price"] = new_price
                 item["selling_price"] = new_price * 2  # 100% higher than cost price
