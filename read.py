@@ -6,7 +6,7 @@ def readingfile(path_to_file):
             for line in f:
                 parts = line.strip().split(", ")
                 if len(parts) == 5:
-                    
+        
                     item = {
                         "name": parts[0],
                         "brand": parts[1],
@@ -16,10 +16,10 @@ def readingfile(path_to_file):
                     }
                     item_list.append(item)
         return item_list
-
+        
     except FileNotFoundError:
         print(f"File not found: {path_to_file}")
         return []
     except Exception as err:
-        print("Something went wrong while reading file:", err)
+        print("Something went wrong while reading the file:", err)
         return []
