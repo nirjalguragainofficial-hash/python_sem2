@@ -1,7 +1,6 @@
 def readingfile(path_to_file):
     """Reads a text file and return as the product details in expected format."""
     item_list = []
-
     try:
         with open(path_to_file, "r") as f:
             for line in f:
@@ -22,5 +21,5 @@ def readingfile(path_to_file):
         print(f"File not found: {path_to_file}")
         return []
     except Exception as err:
-        print("Something went wrong while reading the file:", err)
+        print("Something went wrong while reading file:", err)
         return []
