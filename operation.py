@@ -12,7 +12,6 @@ def load_items():
     return apply_markup(items)
 
 items_in_stock = load_items()
-
 def save_items():
     """Save updated stock back to an text file."""
     try:
