@@ -8,7 +8,7 @@ def start_wecare():
     while True:
         print("*" * 60)
         print("      WELCOME TO THE WECARE BEAUTY & SKINCARE SHOP")
-        print("Please select an option:")
+        print("Please select an Option:")
         print("1. Display Products")
         print("2. Sell Product")
         print("3. Add Stock")
