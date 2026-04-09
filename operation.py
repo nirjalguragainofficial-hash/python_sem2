@@ -33,7 +33,6 @@ def show_items():
             print("-" * 40)
     else:
         print("No products available.")
-
 def process_sale(items, item_name, qty_needed):
     """Handle item sale with free item offer, stock update, and cost calculation."""
     for item in items:
