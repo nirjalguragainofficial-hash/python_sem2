@@ -6,6 +6,7 @@ from operation import (
 from write import make_sales_bill, make_restock_bill
 def start_wecare():
     while True:
+        
         print("*" * 60)
         print("      WELCOME TO THE WECARE BEAUTY & SKINCARE SHOP")
         print("Please select an Option:")
