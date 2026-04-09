@@ -25,7 +25,7 @@ def start_wecare():
         elif selection == '3':
             restock_items()
         elif selection == '4':
-            print("We're grateful for your visit. See you again soon!")
+            print("We are grateful for your visit. See you again soon!")
             break
         else:
             print("Oops! That wasn't a valid choice. Please try 1, 2, 3, or 4.")
