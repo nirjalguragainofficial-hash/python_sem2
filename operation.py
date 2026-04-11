@@ -20,6 +20,7 @@ def save_items():
             for item in items_in_stock:
                 line = f"{item['name']}, {item['brand']}, {item['quantity']}, {int(item['cost_price'])}, {item['origin']}\n"
                 f.write(line)
+                
     except Exception as e:
         print("Error saving data to file:", e)
 
