@@ -16,7 +16,7 @@ def readingfile(path_to_file):
                     }
                     item_list.append(item)
         return item_list
-        
+
     except FileNotFoundError:
         print(f"File not found: {path_to_file}")
         return []
