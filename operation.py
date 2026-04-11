@@ -34,6 +34,7 @@ def show_items():
             print(f"  Stock: {p['quantity']}, Cost: Rs.{p['cost_price']}, Selling Price: Rs.{p['selling_price']}")
             print("-" * 40)
     else:
+        
         print("No products available.")
 def process_sale(items, item_name, qty_needed):
     """Handle item sale with free item offer, stock update, and cost calculation."""
