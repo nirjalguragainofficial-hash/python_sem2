@@ -14,7 +14,6 @@ def load_items():
 items_in_stock = load_items()
 def save_items():
     """Save updated stock back to an text file."""
-    
     try:
         with open("products.txt", "w") as f:
             for item in items_in_stock:
