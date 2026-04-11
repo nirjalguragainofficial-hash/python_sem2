@@ -21,6 +21,7 @@ def make_sales_bill(buyer_name, sale_info):
     print("-" * 60)
     print("Sale completed! Thanks for shopping with us.")
 
+
 def make_restock_bill(supplier_name, items_restocked):
     time_stamp = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
     filename = f"{supplier_name}_{time_stamp}.txt"
