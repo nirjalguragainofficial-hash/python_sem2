@@ -6,6 +6,7 @@ def apply_markup(items):
     for item in items:
         item["selling_price"] = item["cost_price"] * 2
     return items
+    
 def load_items():
     items = readingfile("products.txt")
     return apply_markup(items)
