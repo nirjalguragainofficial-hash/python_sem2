@@ -1,4 +1,4 @@
-# WeCare Beauty & Skincare Shop Management System
+# WeCare Beauty & Skincare Shop Management System 
 
 A simple command-line application for managing inventory, sales, and restocking operations for a beauty and skincare shop.
 
