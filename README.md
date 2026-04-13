@@ -2,7 +2,7 @@
 
 A simple command-line application for managing inventory, sales, and restocking operations for a beauty and skincare shop.
 
-## Features
+## Features 
 
 - **Display Products**: View all available products with current stock levels, cost prices, and selling prices
 - **Sell Products**: Process sales with automatic markup (200% of cost price) and special offers (buy 3 get 1 free)
