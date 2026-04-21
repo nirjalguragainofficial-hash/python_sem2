@@ -3,6 +3,7 @@ from operation import (
     apply_markup, process_sale, process_restock,
     sell_items, restock_items
 )
+
 from write import make_sales_bill, make_restock_bill
 def start_wecare():
     while True:
