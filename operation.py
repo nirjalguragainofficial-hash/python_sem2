@@ -67,7 +67,7 @@ def process_sale(items, item_name, qty_needed):
     return None
 
 def process_restock(items, item_name, added_qty, new_price=None):
-    """Update stock quantity and optionally update cost price."""
+    """Update stock quantity & optionally update cost price."""
     for item in items:
         if item["name"].lower() == item_name.lower():
             item["quantity"] += added_qty
