@@ -175,6 +175,7 @@ def restock_items():
                 origin = input("Origin: ").strip()
 
                 new_entry = {
+                    
                     "name": item_name,
                     "brand": brand,
                     "quantity": qty,
