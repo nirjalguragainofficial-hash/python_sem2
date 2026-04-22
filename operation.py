@@ -184,7 +184,6 @@ def restock_items():
                     "selling_price": cp * 2,  # 100% higher than cost price
                     "quantity_added": qty
                 }
-
                 items_in_stock.append(new_entry)
                 make_restock_bill(supplier, [new_entry])
                 save_items()
